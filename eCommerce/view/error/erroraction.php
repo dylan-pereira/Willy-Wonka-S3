@@ -1,0 +1,1 @@
+Une erreur d'action est survenue. Modifiez l'action utilisée ou bien retournez à la page d'accueil : <a href="index.php"> ICI</a>

@@ -1,0 +1,17 @@
+section.cart {
+	background-color: #F7E9C3;
+	border-radius: 10px;
+	padding: 10px 10px;
+	margin: 4% 4%;
+}
+.cart h2 {
+	font-size: 18px;
+}
+
+.cart p {
+	font-size: 16px;
+}
+
+.cart p a {
+	color: grey;
+}

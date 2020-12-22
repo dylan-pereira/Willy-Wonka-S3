@@ -1,0 +1,23 @@
+main {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding: 5% 0 0 5%;
+}
+
+main .size1 {
+	margin-right: 5%;
+	margin-bottom: 5%;
+	flex-basis: 45%;
+}
+
+main .size2 {
+	margin-right: 5%;
+	margin-bottom: 5%;
+	flex-basis: 100%;
+}
+
+main article a figure img {
+	width: 100%;
+	vertical-align: middle;
+}

@@ -1,0 +1,131 @@
+footer {
+	display: flex;
+	flex-direction: column;
+	color: #A27B00;
+	font-size: 16px;
+	margin-top: 3%;
+}
+
+#first_footer {
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+	height: 110%;
+	margin: 2% 0;
+}
+
+input.googlemap_popup[type=checkbox] {
+	display: none;
+}
+
+.address {
+	text-align: center;
+	cursor: pointer;
+	color: #A27B00;
+}
+iframe.googlemap {
+	position: relative;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	width: 74%;
+	height: 74%;
+	animation: scaling01 1s linear;
+	z-index: 15;
+}
+
+.googlemap_popup_overlay {
+	position: relative;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background:rgba(0,0,0,.8);
+	animation: scaling01 0.5s 0.75s backwards;
+	z-index: 10;
+}
+
+input.googlemap_popup[type=checkbox] ~ iframe.googlemap, input.googlemap_popup[type=checkbox] ~ .googlemap_popup_overlay {
+	display: none;
+}
+
+input.googlemap_popup[type=checkbox]:checked ~ .googlemap_popup_overlay {
+	display: block;
+}
+
+input.googlemap_popup[type=checkbox]:checked ~ iframe {
+	display: block;
+}
+
+.social_networks:before, .social_networks:after {
+	content: "";
+	border-bottom: 1px solid #A27B00;
+	width: 90%;
+	margin: auto;
+	margin: 1% 0;
+}
+
+.social_networks {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 1%;
+}
+
+.social_networks a img{
+	width: 20px;
+	height: 20.5px;
+}
+
+.social_networks_links {
+	width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 2%; 
+}
+
+.social_networks_links a {
+	text-align: center;
+}
+
+.social_networks_names {
+	display: none;
+}
+
+#third_footer {
+	width: 95%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:row;
+	justify-content: space-around;
+	margin-bottom: 1%;
+}
+
+#third_footer a {
+	padding: 0.5%;
+	width: fit-content;
+	color: #775454;
+}
+
+#fourth_footer {
+	background-color: #2E1F1EFF;
+	padding: 0.25% 0;
+}
+
+#fourth_footer p {
+	width: 95%;
+	margin: auto;
+	text-align: center;
+	color: #775454;
+}
+
+
+
+@keyframes scaling01 {
+	from {transform: scale(0,0);}
+	to {transform: scale(1,1);}
+}

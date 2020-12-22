@@ -1,0 +1,41 @@
+#first_footer {
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+	margin: auto;
+}
+
+div#first_footer iframe.googlemap {
+	position: inherit;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: unset;
+	width: auto;
+	height: auto;
+	animation: none;
+	display: block;
+}
+
+div#first_footer label.googlemap_popup_overlay {
+	display: none;
+}
+
+label.address {
+	cursor: default;
+}
+
+
+.social_networks_names {
+	display: inline;
+	color: #A27B00;
+	padding-left: 5px;
+}
+
+.social_networks_links a {
+	display: flex;
+	align-items: center;
+}
+

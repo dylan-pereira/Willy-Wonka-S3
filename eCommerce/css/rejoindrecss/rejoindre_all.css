@@ -1,0 +1,136 @@
+/* tout les élément de main sauf h1 */
+
+.tout {
+	display: flex;
+	width: 96%;
+	margin: auto;
+	flex-direction: column;
+}
+
+/* les articles */
+
+article {
+	margin-top: 5%;
+}
+
+main article:nth-child(2) {
+	margin-bottom: 5%;
+}
+
+/* la div de présentation (contient le titre et les raisons) */
+
+.presentation {
+	flex-direction: column;
+}
+
+/* la div contenant que le titre de la présentation */
+
+.titrepre {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 2.5%;
+	padding: 5px;
+	border: solid 2px #F7E9C3;
+	border-radius: 8px;
+	background-color: #F7E9C3;
+}
+
+/* la div qui contient les raisons */
+
+.raisons {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+/* les div raisons */
+
+.r {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	border: solid 2px #F7E9C3;
+	border-radius: 8px;
+	margin-bottom: 2.5%;
+}
+
+/* éléments dans les raisons */
+
+.titre {
+	background-color: white;
+	padding: 5px;
+}
+
+.titre h3 {
+	text-align: center;
+}
+
+.texte {
+	padding: 5px;
+}
+
+.texte p {
+	text-align: justify;
+	color:#A27B00;
+}
+
+/* la div presentation des métiers (contient le titre et les 3 div metier) */
+
+.corpmetier {
+	flex-direction: column;
+}
+
+/* la div contenant les metiers */
+
+.metier {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+/* les div metier (je les ai remplacé par des a car j'ai besoin de liens) */
+
+article a {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	border: solid 2px #F7E9C3;
+	border-radius: 8px;
+	background-color: #F7E9C3;
+	position: relative;
+	transition: all 0.2s ease-out;
+	margin-bottom: 2.5%;
+}
+
+/* éléments dans div metier */
+
+.m {
+	display: flex;
+	align-items: center;
+}
+
+.m h3 {
+	text-align: center;
+	vertical-align: middle;
+	color: black;
+	position: absolute;
+	width: 100%;
+	transition: all 0.2s ease-out;
+}
+
+.m img {
+	width: 100%;
+	opacity: 0;
+}
+
+/* hover */
+
+article a:hover {
+	border: solid 2px black;
+	background-color: black;
+}
+
+article a:hover h3 {
+	color: #F7E9C3;
+}

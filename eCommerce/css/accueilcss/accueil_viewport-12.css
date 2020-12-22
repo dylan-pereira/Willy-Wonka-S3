@@ -1,0 +1,15 @@
+main {
+	padding: 2% 0 0 2%;
+}
+
+main .size1 {
+	margin-right: 2%;
+	margin-bottom: 2%;
+	flex-basis: 23%;
+}
+
+main .size2 {
+	margin-right: 2%;
+	margin-bottom: 2%;
+	flex-basis: 48%;
+}

@@ -1,0 +1,105 @@
+
+/* tout le groupe de toute les cases perso */
+
+.toutperso {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/* article contenant tout d'1 seul perso */
+
+.perso {
+	display: flex;
+	flex-direction: column;
+	border: solid 3px #A27B00;
+	width: 90%;
+	margin-bottom: 5%;
+	margin-right: 5%;
+	margin-left: 5%;
+	position: relative;
+	overflow: hidden;
+}
+
+/* div contenant l'image */
+
+.imgperso {
+	margin: auto;
+	width: 100%;
+	display: flex;
+}
+
+/* image perso */
+
+.imgperso img {
+	width: 100%;
+}
+
+/* l'image transparente */
+
+img.transparent {
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 4;
+
+}
+
+/* éléments de transitions */
+
+.txtperso {
+	border-top: solid 3px #A27B00;
+	width: 100%;
+	position: absolute;
+	bottom: -40px;
+	background-color: #F7E9C3;
+	transition: bottom 0.2s ease-out;
+}
+
+
+.perso p {
+	margin: 0px 0px;
+	top: 2%;
+	left: 2%;
+	text-align: justify;
+	position: absolute;
+	width: 96%;
+	height: 96%;
+	opacity: 0;
+	transition: all 0.2s ease-out;
+}
+
+/*pour tout les persos*/ /*note mat: j'ai tous fusionné comme c'est les mêmes regles*/
+
+.toutperso input#boxp1[type=checkbox]:checked ~ .labelp1 ~ .txtperso,.toutperso input#boxp2[type=checkbox]:checked ~ .labelp2 ~ .txtperso,
+.toutperso input#boxp3[type=checkbox]:checked ~ .labelp3 ~ .txtperso, .toutperso input#boxp4[type=checkbox]:checked ~ .labelp4 ~ .txtperso {
+	bottom: 0;
+}
+
+.toutperso input#boxp1[type=checkbox]:checked ~ .labelp1 ~ p, .toutperso input#boxp2[type=checkbox]:checked ~ .labelp2 ~ p,
+.toutperso input#boxp3[type=checkbox]:checked ~ .labelp3 ~ p, .toutperso input#boxp4[type=checkbox]:checked ~ .labelp4 ~ p {
+	background-color: #FFFFFF88;
+	opacity: 0.8;
+}
+
+/* la checkbox invisible */
+
+input[type=checkbox] {
+	display: none;
+}
+
+/* titres */
+
+h2 {
+	font-size: 20px;
+	text-align: center;
+	color: #A27B00;
+	margin: 5px;
+}
+
+h3 {
+	font-size: 18px;
+	text-align: center;
+	color: #A27B00;
+	margin: 5px;
+}

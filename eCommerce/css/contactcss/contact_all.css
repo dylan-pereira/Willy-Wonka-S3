@@ -1,0 +1,78 @@
+main {
+	text-align: center;
+	color:#A27B00;
+}
+
+main h2 {
+	/*border: 1px solid #CCCCCC;*/
+	font-size: 20px;
+	margin: 2% 0%;
+}
+
+main form {
+	background-color: #3d2b29;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	/*width : 80%;*/
+}
+
+main form div {
+	margin-top:2%;
+	margin-bottom:2%;
+}
+
+main fieldset {
+	margin:4%;
+	background-color:#f7e9c3;
+	color: black;
+	border-radius: 10px;
+	border: none;
+}
+
+main article {
+	width:60%;
+	background-color: #CCC;
+}
+
+main aside {
+	width:30%;
+	margin-left:10%;
+	background-color: #CCC;
+}
+
+main div {
+	margin:2%;
+}
+
+main #mot{
+	display : flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+main label{
+	margin-right: 2%;
+}
+
+main #sexe{
+	display : flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+main span {
+	padding-right: 5%;
+}
+
+@media (min-width: 990px) {
+  form{
+
+	width:80%;
+	}
+}
+
+

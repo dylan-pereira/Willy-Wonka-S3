@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'willywonka';
+  src: url('../../font/willywonka.eot');
+  src: url('../../font/willywonka.eot?#iefix') format('embedded-opentype'),
+       url('../../font/willywonka.svg#WillyWonka') format('svg'),
+       url('../../font/willywonka.ttf') format('truetype'),
+       url('../../font/willywonka.woff') format('woff'),
+       url('../../font/willywonka.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

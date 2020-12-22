@@ -1,0 +1,144 @@
+.beige_bg {
+	background-color: #F7E9C3;
+	margin: auto;
+	width: 80%;
+	border-radius: 10px;
+}
+
+.form_container {
+	padding: 2% 2%;
+}
+
+main:after {
+	content: "";
+	display: block;
+	margin: 10px 0;
+	border: solid 10px #3d2b29;
+}
+
+.error {
+	background: rgba(200,0,0,0.5);
+}
+
+main li {
+	color: rgba(200,0,0,0.8);
+	display: none;
+}
+
+main li.emptyFields, li.invalidEmail, li.invalidPwdEmailPair, li.emailAlreadyUsed, li.passwordRepeat, li.invalidAccount {
+	display: list-item;
+}
+
+li.emailAlreadyUsed a {
+	color: darkred;
+	text-decoration: underline;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 18px;
+	margin-bottom: 2%;
+}
+
+.nom_prenom {
+	display: flex;
+	justify-content: space-between
+}
+
+.nom_prenom fieldset {
+	width: 49%;
+}
+
+.nom_prenom + fieldset {
+	display: flex;
+}
+
+.nom_prenom + fieldset div {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.nom_prenom + fieldset div div {
+	width: fit-content;
+}
+
+fieldset {
+	margin-bottom: 2%;
+	border: none;
+}
+
+fieldset.type_field, .nom_prenom + fieldset div div label input {
+	background-color: white;
+	border: 1px solid #0000002F;
+}
+
+fieldset.type_field label {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+fieldset.type_field label img {
+	vertical-align: middle;
+	padding: 6px 12px;
+	background-color: #A27B00;
+	border-right: 3px solid #A6A6A6;
+}
+
+fieldset.type_field label input, .nom_prenom + fieldset div div label {
+	width: 100%;
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	padding-left: 10px;
+}
+
+button.submit, .button {
+	background-color: #A27B00;
+	border: none;
+	width: fit-content;
+	padding: 10px 5px;
+	font-size: 14px;
+	vertical-align: middle;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	color: #FFFFFF;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+button.submit ~ a {
+	padding-left: 10px;
+	color: black;
+	text-decoration: underline;
+}
+
+
+.register:before {
+	position: relative;
+	content: "";
+	display: block;
+	border-top: 1px solid #888A8588;
+	width: 100%;
+	margin: auto;
+	padding-bottom: 5px;
+}
+
+.register {
+	margin-top: 10px;
+}
+
+.register h3 {
+	margin: 10px 0;
+	font-size: 16px;
+	font-weight: normal;
+}

@@ -1,0 +1,118 @@
+/* tout le groupe de toute les cases perso */
+
+.toutperso {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* article contenant tout d'1 seul perso */
+
+.perso {
+	display: flex;
+	flex-direction: column;
+	border: solid 3px #A27B00;
+	width: 30%;
+	margin-bottom: 2.5%;
+	margin-right: 2.5%;
+	margin-left: 0%;
+	position: relative;
+	overflow: hidden;
+}
+
+/* article d'1 perso en particulier */ 
+
+#p1 {
+	width: 30%;
+	margin-bottom: 2.5%;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+}
+
+#p4 {
+	width: 30%;
+	margin-bottom: 2.5%;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+}
+
+/* div contenant l'image */
+
+.imgperso {
+	margin: auto;
+	width: 100%;
+	display: flex;
+}
+
+/* image perso */
+
+.imgperso img {
+	width: 100%;
+}
+
+/* l'image transparente */
+
+img.transparent {
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 4;
+
+}
+
+/* éléments de transitions */
+
+.txtperso {
+	border-top: solid 3px #A27B00;
+	width: 100%;
+	position: absolute;
+	bottom: -40px;
+	background-color: #F7E9C3;
+	transition: bottom 0.2s ease-out;
+}
+
+
+.perso p {
+	margin: 0px 0px;
+	top: 2%;
+	left: 2%;
+	text-align: justify;
+	position: absolute;
+	width: 96%;
+	height: 96%;
+	opacity: 0;
+	transition: all 0.2s ease-out;
+}
+/* la checkbox invisible */
+
+input[type=checkbox] {
+	display: none;
+}
+
+/* titres */
+
+h2 {
+	font-size: 20px;
+	text-align: center;
+	color: #A27B00;
+	margin: 5px;
+}
+
+h3 {
+	font-size: 18px;
+	text-align: center;
+	color: #A27B00;
+	margin: 5px;
+}
+
+/* hover */
+
+.perso:hover .txtperso {
+	z-index: 3;	
+	bottom: 0;
+}
+
+.perso:hover p {
+	background-color: white;
+	opacity: 0.8;
+	z-index: 2;
+}

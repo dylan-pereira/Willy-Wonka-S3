@@ -1,0 +1,34 @@
+li.dropdown_menu_mobile, .dropdown_menu_mobile, li.dropdown_menu_mobile2, .dropdown_menu_mobile2,  ul.main_nav_links li.mobile {
+	display: none;
+}
+
+ ul.main_nav_links li.desktop {
+	display: block;
+}
+
+li.dropdown_menu, li.dropdown_menu2 {
+	display: block;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+li.dropdown_menu:hover > ul, li.dropdown_menu:hover, li.dropdown_menu2:hover > ul, li.dropdown_menu2:hover {
+	visibility: visible;
+	display: block;
+	z-index: 15;
+}
+
+ul.dropdown_menu, ul.dropdown_menu2 {
+	visibility: hidden;
+	display: block;
+	position: absolute;
+	margin: 0px;
+	padding: 5px 0px 5px 10px;
+}
+
+ul.dropdown_menu li, ul.dropdown_menu2 li {
+	display: block;
+	width: 160%;
+	margin: 0px 0px 3px 0px;
+}

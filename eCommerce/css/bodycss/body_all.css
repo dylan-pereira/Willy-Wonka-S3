@@ -1,0 +1,95 @@
+/* Colors
+ *
+ * Gold text first try: 						#D4AF37
+ * Gold text second try: 						#A27B00
+ * Light brown text footer: 					#5C413D
+ *
+ * Brown background: 							#3d2b29
+ * Brown shadow: 								#5C413D
+ * Dark brown bottom footer background: 		#2E1F1EFF
+ * Beige background: 							#F7E9C3
+ *
+ */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', 'Public Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+body {
+	background-color: #3d2b29;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1;
+	background-color:#3d2b29;
+	width: 100%;
+	margin: 4% auto;
+	box-shadow: 0 0 2em #5c413d;
+	border-radius: 10px;
+	padding: 0 4%; 
+
+}
+
+/*ajout bouton h1 en haut*/
+#top_page_title {
+	background-color: #F7E9C3;
+	color:#A27B00;
+	margin: auto;
+	padding: 5px 30px;
+	width: -webkit-fill-available;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 5px;
+	position: relative;
+	top: -25px;
+	font-size: 30px;
+	font-family: "willywonka", 'Open Sans', 'Public Sans', sans-serif;
+	font-weight: normal;
+}
+
+h1 {
+	font-family: "willywonka", 'Open Sans', 'Public Sans', sans-serif;
+	font-weight: normal;
+	font-size: 40px;
+	color:#A27B00;
+}
+
+.boutton{
+	background-color: black;
+	border: none;
+	color: #A27B00;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 30px;
+	font-family: "willywonka", 'Open Sans', 'Public Sans', sans-serif;
+	cursor: pointer;
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+
+}
+
+.boutton:hover{
+	background-color: white;
+}

@@ -1,0 +1,13 @@
+
+.metier {
+	flex-direction: row;
+}
+
+
+article a:nth-child(1) {
+	margin-right: 2.5%;
+}
+
+article a:nth-child(3) {
+	margin-left: 2.5%;
+}

@@ -1,0 +1,169 @@
+main {
+	padding-bottom: 2%;
+	color:#A27B00;
+}
+
+
+.deroulant {
+	
+	border: 1px solid #f7e9c3;
+	margin-bottom: 2%;
+	border-radius:5px;
+}
+
+input[type="checkbox"]{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display:none;
+}
+
+.deroulant .reponse{
+	display: none;
+}
+
+
+
+/*Lorsque la question est cochée alors on rotate la fleche correspondante*/
+#checkquestion1:checked ~ * #questionreponse1 label img,
+#checkquestion2:checked ~ * #questionreponse2 label img,
+#checkquestion3:checked ~ * #questionreponse3 label img,
+#checkquestion4:checked ~ * #questionreponse4 label img,
+#checkquestion5:checked ~ * #questionreponse5 label img
+{
+	transform:rotate(90deg);
+	
+}
+
+
+
+/*Lorsque la question est cochée alors on ajoute un margin top et bottom a la reponse correspondante*/
+#checkquestion1:checked ~ * #questionreponse1 .reponse,
+#checkquestion2:checked ~ * #questionreponse2 .reponse,
+#checkquestion3:checked ~ * #questionreponse3 .reponse,
+#checkquestion4:checked ~ * #questionreponse4 .reponse,
+#checkquestion5:checked ~ * #questionreponse5 .reponse
+{
+	margin: 4% 0;
+	display: block;
+	
+}
+
+p{
+	margin-right:5%;
+	margin-left:5%;
+}
+
+/*main li {
+	padding:2%;
+	background-color: red;
+
+}*/
+
+article > h2{
+	padding-bottom: 1%;
+	font-size:30px;
+	margin:auto;
+	font-family: "willywonka";
+	font-weight: normal;
+	color:#A27B00;
+}
+
+h2 {
+	font-size: 20px;
+	color:black;
+	padding-left: 2%;
+}
+
+
+
+
+
+article{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+ 	margin:auto;
+	padding-top: 3%;
+
+
+
+}
+
+main ul{
+	/*width: 80%;*/
+	margin:4%;
+
+}
+
+@media (min-width: 700px) {
+  main ul{
+
+	width:80%;
+	
+	}
+
+}
+
+article ul li label:hover{
+	background-color:white;
+}
+
+main label{
+
+	display: flex;
+	background-color:#f7e9c3;
+	cursor: pointer;
+	padding:2%;
+
+	font-size: 20px;
+	color:black;
+	padding-left: 2%;
+	font-weight: bold;
+
+}
+
+main li{
+	list-style: none;
+	
+}
+
+
+li label img {
+	height :20px;
+	transition: transform 0.10s linear;
+	margin-right: 2%;	
+
+}
+
+p > img {
+
+	max-width: 100%;
+	margin:auto;
+}
+
+.reponse{
+	
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.reponse > p {
+	padding-bottom: 1%;
+}
+
+.ouvrir{
+	background-color: red;
+
+}
+
+#Sommaire li {
+	background-color:#f7e9c3;
+	padding:2%;
+	padding-left: 2%;
+}
+
+#Sommaire li:hover {
+	background-color:white;
+}

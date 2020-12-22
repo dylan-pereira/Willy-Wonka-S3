@@ -1,0 +1,237 @@
+section {
+	border-radius: 10px;
+	background-color: #F7E9C3;
+	width: 100%;
+	margin-bottom: 3%;
+}
+
+#general {
+	padding-top: 0;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#top_page_title {
+	top: -75px;
+}
+
+.other_products_list.general {
+	position: relative;
+	top: -25px;
+}
+
+.image {
+	padding: 8% 5%;
+}
+
+.image .product_img {
+	width: 100%;
+}
+
+.wonka_font {
+	font-family: "willywonka", 'Open Sans', 'Public Sans', sans-serif;;
+	font-weight: 400;
+}
+
+.details, .review, .other_products {
+	padding: 14px 5% 14px 5%;
+}
+
+section.other_products {
+	margin-bottom: 0;
+}
+
+.details h2 {
+	color: #A27B00;
+	font-size: 24px;
+	margin-bottom: 24px;
+}
+
+.details .detailed_info {
+	color: #888888;
+	margin-bottom: 14px;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.product_price {
+	color: #A27B00;
+	font-weight: normal;
+	font-size: 18px;
+	margin-bottom: 18px;
+	text-transform: uppercase;
+}
+
+.details .product_desc {
+	text-align: justify;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: normal;
+	margin-bottom: 14px;
+}
+
+.details .add_cart {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.details .add_cart * {
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	margin-bottom: 14px;
+	height: 50px;
+}
+
+.details .add_cart .quantity {
+	width: 50px;
+	text-align: center;
+	background-color: #EEEEEE;
+	color: #888888;
+}
+
+.details .add_cart .submit_to_cart {
+	background-color: #A27B00;
+	width: 100%;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+.review:before {
+	position: relative;
+	content: "";
+	display: block;
+	border-top: 1px solid #888A8588;
+	width: 95%;
+	margin: auto;
+	top: -14px;
+}
+
+.review h2 {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 14px;
+}
+
+.review .review_post {
+	padding-left: 5%;
+}
+
+.review .review_post h3, .review .review_post #review_title, .review .review_post #review_desc {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+    border: none;
+    padding: 5px;
+}
+
+.review .review_post .review_post_button {
+    border: none;
+	background-color: #A27B00;
+	padding: 10px 30px;
+	font-size: 16px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	color: #FFFFFF;
+	margin-bottom: 14px;
+}
+
+
+.review .review_post #review_title, .review .review_post #review_desc {
+	width: 95%;
+	-webkit-appearance: none;
+	margin-bottom: 14px;
+	background-color: #EEEEEE;
+	color: #888888;
+}
+
+.other_products {
+	display: flex;
+	flex-direction: column;
+}
+
+.other_products .other_products_list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+}
+
+.other_products .other_products_list .other_product_article {
+	width: 40%;
+	flex-grow: 1;
+	border: 1px solid #888A8588;
+	border-radius: 0 10px 0 10px;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	background-color: #888A8588;
+	position: relative;
+}
+
+.other_products .other_products_list .other_product_article h2 {
+	color: #A27B00;
+	text-align: center;
+	font-size: 18px;
+}
+
+
+p.product_price {
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 18px;
+}
+
+
+.other_products .other_products_list .other_product_article .other_product_cart {
+	position: absolute;
+	right: 3px;
+	bottom: 3px;
+	width: 30px;
+	height: 30px;
+	background-color: #888A8588;
+	border-radius: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+
+.other_products .other_products_list .other_product_article form input[type="number"], .other_products .other_products_list .other_product_article form input[type="text"] {
+	display: none;
+}
+
+.other_products .other_products_list .other_product_article form input[type="submit"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 21px;
+	height: 25px;
+	background: url('../../images/header/mobile_cart.png') no-repeat center center;
+	background-size: 18px;
+	margin-bottom: 2px;
+	cursor: pointer;
+}
+
+.other_products_title {
+	color: #A27B00;
+	font-size: 18px;
+	margin-bottom: 18px;
+}

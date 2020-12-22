@@ -1,0 +1,86 @@
+.tout {
+	display: flex;
+	flex-direction: column;
+}
+
+/* le bloc article */
+
+article {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 70%;
+	margin: auto;
+	border: 2px solid #F7E9C3;
+	border-radius: 8px
+}
+
+/* les article mais différencié */
+
+.com {
+	margin-top: 2%;
+}
+
+.contact {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+/* div du titre et du texte de chaque article */
+
+.titre {
+	background-color: #F7E9C3;
+	padding: 1% 0%;
+}
+
+.texte {
+	padding: 4% 3%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	color:#A27B00;
+}
+
+
+
+/* les titres */
+
+h2 {
+	text-align: center;
+}
+
+h3 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* les paragraphes */
+
+p{
+	text-align: justify;
+}
+
+ul {
+	margin-left: 20px;
+}
+
+/* responsive */
+
+@media (max-width: 992px) {
+
+	.contact .texte {
+		flex-direction: column;
+		margin: auto;
+	}
+
+	.contact .texte div {
+		margin: 5% 0%;
+	}
+}
+
+@media (max-width: 768px) {
+
+	article {
+		width: 96%;
+	}
+}

@@ -1,0 +1,29 @@
+/* article contenant tout d'1 seul perso */
+
+.perso {
+	display: flex;
+	flex-direction: column;
+	border: solid 3px #A27B00;
+	width: 40%;
+	margin-bottom: 5%;
+	margin-right: 5%;
+	margin-left: 0%;
+	position: relative;
+	overflow: hidden;
+}
+
+/* article d'1 perso en particulier */ 
+
+#p1 {
+	width: 40%;
+	margin-bottom: 5%;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+#p3 {
+	width: 40%;
+	margin-bottom: 5%;
+	margin-right: 5%;
+	margin-left: 5%;
+}
